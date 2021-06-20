@@ -1,0 +1,75 @@
+<div class="content">
+    <app-nav></app-nav>
+    <div class="head">
+        <div class="title">
+            <h2> feeds </h2>
+        </div>
+        <div class="links">
+            <ul>
+                <li> <a href="#"  data-filter=".all">         all           </a> </li>
+                <li> <a href="#"  data-filter=".follwoing">   following     </a> </li>
+                <li> <a href="#"  data-filter=".newest">      newest        </a> </li>
+                <li> <a href="#"  data-filter=".popular" class="active_tab">     popular       </a> </li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        <!-- start following -->
+        <div class="item follwoing all hide" *ngFor="let follow of following ; index as i ; first as  first">
+            <div class="cont_img">
+                <img src="{{follow.main_img}}" alt="">
+            </div>
+            <div class="description">
+                <div class="person">
+                    <div class="cont_img">
+                        <img src="{{follow.person_img}}" alt="">
+                    </div>
+                    <p class="name"> {{follow.person_name}} </p>
+                </div>
+                <div class="actions"> 
+                    <i class="fas fa-heart" (click)="toggleButton()" [ngClass]="{'active': first && isToggled}"></i>     <span [ngClass]="{'active': first && isToggled }"> {{first ? liks_number : 20}} </span>
+                    <i class="fas fa-comment-dots"></i><span> {{follow.comments}} </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- start newest  -->
+        <div class="item newest all hide" *ngFor="let new of newest ; index as i; first as first">
+            <div class="cont_img">
+                <img src="{{new.main_img}}" alt="">
+            </div>
+            <div class="description">
+                <div class="person">
+                    <div class="cont_img">
+                        <img src="{{new.person_img}}" alt="">
+                    </div>
+                    <p class="name"> {{new.person_name}} </p>
+                </div>
+                <div class="actions"> 
+                    <i class="fas fa-heart" (click)="toggleButton()" [ngClass]="{'active': first && isToggled}"></i>     <span [ngClass]="{'active': first && isToggled }"> {{first ? liks_number : 20}} </span>
+                    <i class="fas fa-comment-dots"></i><span> {{new.comments}} </span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- start popular -->
+        <div class="item popular all" *ngFor="let pop of popular ; index as i; first as first">
+            <div class="cont_img">
+                <img src="{{pop.main_img}}" alt="">
+            </div>
+            <div class="description">
+                <div class="person">
+                    <div class="cont_img">
+                        <img src="{{pop.person_img}}" alt="">
+                    </div>
+                    <p class="name"> {{pop.person_name}} </p>
+                </div>
+                <div class="actions"> 
+                    <i class="fas fa-heart" (click)="toggleButton()" [ngClass]="{'active': first && isToggled}"></i>     <span [ngClass]="{'active': first && isToggled }"> {{first ? liks_number : 20}} </span>
+                    <i class="fas fa-comment-dots"></i><span> {{pop.comments}} </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

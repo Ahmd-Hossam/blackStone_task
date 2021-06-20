@@ -1,0 +1,17 @@
+<section class="stories">
+    <ul>
+        <li *ngFor="let story of stories;
+                  index as i; 
+                  first as  first;
+                  last  as  last;
+                  odd   as  odd ;
+                  let  even = even"><!-- or this -->
+           <a href="#" class="item">
+               <div class="cont_img" [class.first-item]="first" [class.last-item]="last" [class.odd-item]="odd">
+                   <img src="{{story.img}}" alt="">
+               </div>
+               <p class="name"> {{story.name}} </p>
+           </a>
+       </li>
+    </ul>
+</section>

@@ -1,0 +1,72 @@
+@import '../../../assets/css/colors.scss';
+
+.stories{
+    border-bottom: 2px solid #b8cde05c;
+    padding:8px 0 ;
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        li{
+            .item{
+                text-decoration: none;
+                text-align: center;
+                .cont_img{
+                    width:67px;
+                    height: 67px;
+                    border-radius: 50%;
+                    padding:3px;
+                    margin:12px 10px;
+                    background:#FFF;
+                    overflow: hidden;
+                    position: relative;
+                    border:2px solid $seond_color;
+                    img{
+                        width:100%;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
+                }
+                .name{
+                    color:$text_color;
+                    text-transform: capitalize;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.first-item{
+    border:2px solid $main_color !important;
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
+        top:5%;
+        left:5%;
+        z-index: 99;
+        background-color: $main_color;
+        opacity: .8;
+    }
+    &::after{
+        font-family: "Font Awesome 5 free";
+        font-weight: 900;
+        content: "\f067";
+        color: $white;
+        position: absolute;
+        padding-top: 17px;
+        z-index: 999;
+        font-weight: bold;
+    }
+}
+.last-item{
+    border:2px solid $main_color !important;
+}
+.odd-item{
+    border:2px solid $main_color !important;
+}

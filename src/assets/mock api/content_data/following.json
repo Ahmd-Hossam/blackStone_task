@@ -1,0 +1,18 @@
+[
+    {
+        "id":1,
+        "main_img":"assets/imgs/content/following/1.jpg",
+        "person_img":"assets/imgs/persons/2.png",
+        "person_name":"ali tanceredi",
+        "likes":0,
+        "comments":20
+    },
+    {
+        "id":2,
+        "main_img":"assets/imgs/content/following/2.jpg",
+        "person_img":"assets/imgs/persons/4.png",
+        "person_name":"jone shelby",
+        "likes":5,
+        "comments":17
+    }
+]

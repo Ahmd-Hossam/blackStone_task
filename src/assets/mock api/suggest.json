@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "name":"sarah tanceredi",
+        "img":"assets/imgs/suggest/girl.jpg",
+        "email":"@dr.sarah",
+        "following":"follow"
+    },
+    {
+        "id":2,
+        "name":"arthur shelby",
+        "img":"assets/imgs/suggest/man 1.jfif",
+        "email":"@art.shalby",
+        "following":"followed"
+    },
+    {
+        "id":3,
+        "name":"vin diesel",
+        "img":"assets/imgs/suggest/man 2.jpg",
+        "email":"@vindiesel",
+        "following":"follow"
+    }
+]

@@ -1,0 +1,19 @@
+[
+    {
+        "id":1,
+        "main_img":"assets/imgs/content/popular/1.PNG",
+        "person_img":"assets/imgs/persons/2.png",
+        "person_name":"dean winchester",
+        "likes":632,
+        "comments":64
+    },
+    {
+        "id":2,
+        "main_img":"assets/imgs/content/popular/2.PNG",
+        "person_img":"assets/imgs/persons/4.png",
+        "person_name":"jesss pinkman",
+        "likes":72,
+        "comments":24
+    }
+
+]

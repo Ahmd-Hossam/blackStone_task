@@ -1,0 +1,77 @@
+<div class="right_bar">
+    <div class="head">
+        <div class="input">
+            <input type="search" placeholder="Search">
+        </div>
+        <div class="noti">
+            <i class="fas fa-bell"></i>
+        </div>
+        <div class="upload">
+            <i class="fas fa-cloud-upload-alt"></i>
+        </div>
+    </div>
+
+    <!-- start suggestions -->
+    <div class="suggest">
+        <div class="title">
+            <h2> suggestions for you      </h2>
+            <h2> <a href="#"> see all </a></h2>
+        </div>
+    </div>
+
+    <div class="items">
+        <div class="item" *ngFor="let suggest of suggests ; index as i ; odd as odd  ">
+            <div class="person">
+                <div class="cont_img">
+                    <img src="{{suggest.img}}" alt="">
+                </div>
+                <div class="info">
+                     <h2> {{suggest.name}} </h2>
+                     <p>   {{suggest.email}} </p>
+                </div>
+            </div>
+            <div class="following">
+                <button class="btn btn-primary" [ngClass]="{odd:odd}"> {{suggest.following}} </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- start latest posts -->
+    <div class="latests">
+        <h2 class="title"> latest post activity </h2>
+        <div class="item">
+            <div class="custum_row">
+                <div class="cont_img">
+                    <img src="../../../assets/imgs/Latest/img.PNG" alt="">
+                </div>
+                <div class="info">
+                    <h3> minimalist  </h3>
+                    <h3>staris</h3>
+                    <div class="actions">
+                        <i class="fas fa-heart active_red"></i>        <span class="active_red"> 27 </span>
+                        <i class="fas fa-comment-dots"></i> <span> 12 </span>
+                        <i class="fas fa-bookmark"></i>     <span> 8 </span>
+                    </div>
+                </div>
+            </div>
+            <h2 class="seeAll"> <a href="#"> see all posts </a></h2>
+        </div>
+    </div>
+
+
+    <!-- start copyright -->
+    <div class="copy">
+        <ul>
+            <li> <a href="#">   about </a> <span class="dot"></span>   </li> 
+            <li> <a href="#">   help </a>  <span class="dot"></span>    </li> 
+            <li>  <a href="#">  terms </a>  <span class="dot"></span>  </li>
+            <li> <a href="#">   popular </a> <span class="dot"></span>  </li>
+            <li> <a href="#">   language </a> </li>
+        </ul>
+    </div>
+    <span class="eraser top"></span>
+    <span class="eraser bottom"></span>
+</div>
+

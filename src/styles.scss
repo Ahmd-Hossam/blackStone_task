@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+body{
+    overflow-x: hidden;
+    @media(max-width:1200px){
+        overflow-x: scroll;
+    }
+    background-image:radial-gradient( circle at top right,#D2D7FE,#EBF2FF 50%);
+    background-image:radial-gradient( circle at bottom left,#D1ECFC,#EBF2FF 50%);
+}
