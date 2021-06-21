@@ -1,0 +1,14 @@
+@import "../../../../assets/css/colors.scss";
+.cont{
+    text-align: center;
+    padding-top: 100px;
+    h1{
+        text-transform: capitalize;
+        color: $text_color;
+        margin-bottom: 15px;
+    }
+    i{
+        font-size: 100px;
+        color:$main_color;
+    }
+}

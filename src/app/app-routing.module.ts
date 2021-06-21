@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './view/home/home.component';
+import {HomeComponent as small_home} from '../app/layout/content-module/home/home.component'
+
 
 const routes: Routes = [
   {path:"", component:HomeComponent, children:[

@@ -10,7 +10,7 @@ export class SideBarComponent implements OnInit {
 
   ngOnInit(): void {
     //run jquery
-    this.jquery()
+    //this.jquery()
   }
    
 

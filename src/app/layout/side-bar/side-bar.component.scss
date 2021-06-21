@@ -72,11 +72,11 @@
                 font-size: 20px;
                 position: relative;
                 top: 2px;
+                padding:0 13px;
                 cursor: pointer;
                 color: $gray_color;
            }
            a{
-               padding:0 13px;
                text-decoration: none;
                letter-spacing: 1.02px;
                font-weight: 500;
@@ -170,3 +170,5 @@
 .active_a{
     color:$text_color !important;
 }
+
+
