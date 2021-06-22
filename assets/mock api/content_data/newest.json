@@ -1,0 +1,18 @@
+[
+    {
+        "id":1,
+        "main_img":"assets/imgs/content/newest/1.jpg",
+        "person_img":"assets/imgs/persons/2.png",
+        "person_name":"sayed cadri",
+        "likes":7,
+        "comments":25
+    },
+    {
+        "id":2,
+        "main_img":"assets/imgs/content/newest/2.jpg",
+        "person_img":"assets/imgs/persons/4.png",
+        "person_name":"mosh hamedi",
+        "likes":8,
+        "comments":13
+    }
+]
